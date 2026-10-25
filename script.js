@@ -10,7 +10,7 @@ const C=[["Flower Bouquets","💐","Fresh hand-tied bouquets for every mood.",["
 ["Customized Cakes","🎂","Cakes made to your theme, name and flavor.",["Photo Cake","Theme Cake","Name Cake","Cartoon Cake"],3200]];
 const T=[["Small",1],["Classic",1.6],["Premium",2.4]],L=[["1 lb",1],["2 lb",1.8],["3 lb",2.6]],P=[];
 C.forEach(([n,e,d,b,p],c)=>b.forEach(x=>(c==7?L:T).forEach(([t,m])=>P.push({id:P.length,c,n:x+", "+t,p:Math.round(p*m/100)*100}))));
-const IM=['images/roses-pink.webp', 'images/roses-red.webp', 'images/bouquet.webp'];
+const IM=['Images/roses-pink.webp', 'Images/roses-red.webp', 'Images/bouquet.webp'];
 const $=id=>document.getElementById(id),fmt=n=>"Rs "+n.toLocaleString("en-US"),slug=s=>s.toLowerCase().replace(/ /g,"-");
 let cart={};try{cart=JSON.parse(localStorage.getItem("cx2")||"{}")}catch(e){}
 const items=()=>P.filter(p=>cart[p.id]).map(p=>[p,cart[p.id]]);
