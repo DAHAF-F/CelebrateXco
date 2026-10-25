@@ -1,4 +1,4 @@
-const WA="923710444303",ADDR="Al Saeed Chowk, Phool Mandi, Lahore",IG="#",FB="#",MAP="#",WU="https://wa.me/"+WA;
+const WA="923710444303",ADDR="Al Saeed Chowk, Phool Mandi, Lahore",IG="https://www.instagram.com/celebratexco?mdxt=N3dxOHhsZW9wZmhi",FB="https://www.facebook.com/share/1CVRZsS65Q/",MAP="#",WU="https://wa.me/"+WA;
 const BANK="Meezan Bank, Fahad Hamza, account 02420113618053";
 const C=[["Flower Bouquets","💐","Fresh hand-tied bouquets for every mood.",["Rose","Mixed Seasonal","Lily","Tulip"],3000],
 ["Flower Baskets","🧺","Blooms arranged in woven baskets.",["Pastel","Rose Garden","Sunflower","Luxury"],4500],
