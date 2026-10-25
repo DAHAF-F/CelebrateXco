@@ -36,16 +36,16 @@ story:()=>pg("Our story",`<p>We believe a gift should feel personal. Every bouqu
 delivery:()=>`<section class="pg"><h1>Delivery and payment</h1></section>${info()}<section class="pg"><details><summary>How much is delivery?</summary><p>Delivery is done through inDrive, so the fare depends on distance. It is paid separately and is not included in product prices.</p></details><details><summary>Do you deliver outside Lahore?</summary><p>Not right now. We deliver in Lahore only.</p></details><details><summary>How soon can I get my order?</summary><p>Please order at least 4 hours before your delivery or pickup time.</p></details><details><summary>How do I pay?</summary><p>Bank transfer, JazzCash or Easypaisa. Send the payment screenshot on WhatsApp to confirm.</p></details><details><summary>Can I add a card message?</summary><p>Yes. Add it in the cart before you place your order.</p></details></section>`,
 contact:()=>pg("Contact",`<p>Message us on WhatsApp at 0371-0444303 for orders, custom designs and support.</p><p><a class="btn" href="${WU}">Chat on WhatsApp</a></p><p>Address: ${ADDR}${MAP=="#"?"":`<br><a href="${MAP}">Open in Google Maps</a>`}</p><p>${[["Instagram",IG],["Facebook",FB]].filter(x=>x[1]!="#").map(x=>`<a href="${x[1]}">${x[0]}</a>`).join(" and ")}</p>`)};
 const T0=document.title;
-function route(){const h=location.hash.slice(1)||"home",c=C.findIndex(x=>slug(x[0])==h),m=h.match(/^p(\d+)$/);$("v").innerHTML=m&&P[m[1]]?prod(+m[1]):c>=0?listing(c):(V[h]||V.nf)();if(h=="shop"||c>=0)grid(c);scrollTo(0,0);const t=$("v").querySelector("h1");document.title=h=="home"||!t?T0:t.textContent.trim()+" | CelebrateXco."}
+function route(){document.querySelector("nav").classList.remove("open");$("mb").setAttribute("aria-expanded","false");const h=location.hash.slice(1)||"home",c=C.findIndex(x=>slug(x[0])==h),m=h.match(/^p(\d+)$/);$("v").innerHTML=m&&P[m[1]]?prod(+m[1]):c>=0?listing(c):(V[h]||V.nf)();if(h=="shop"||c>=0)grid(c);scrollTo(0,0);const t=$("v").querySelector("h1");document.title=h=="home"||!t?T0:t.textContent.trim()+" | CelebrateXco."}
 addEventListener("hashchange",route);
 function draw(){const it=items();
  $("cn").textContent=it.reduce((s,[,q])=>s+q,0);
  $("lines").innerHTML=it.length?it.map(([p,q])=>`<div class="line"><span>${p.n}</span><button class="ghost" onclick="chg(${p.id},-1)" aria-label="Remove one">-</button>${q}<button class="ghost" onclick="chg(${p.id},1)" aria-label="Add one">+</button><span>${fmt(p.p*q)}</span></div>`).join(""):"<p>Your cart is empty. Add something from the shop.</p>";
  $("tot").textContent=fmt(it.reduce((s,[p,q])=>s+p.p*q,0))}
 function chg(id,d){cart[id]=Math.max(0,(cart[id]||0)+d);if(!cart[id])delete cart[id];try{localStorage.setItem("cx2",JSON.stringify(cart))}catch(e){}draw()}
-$("cb").onclick=()=>$("cart").classList.add("open");$("cx").onclick=()=>$("cart").classList.remove("open");
+$("mb").onclick=()=>$("mb").setAttribute("aria-expanded",document.querySelector("nav").classList.toggle("open"));$("cb").onclick=()=>$("cart").classList.add("open");$("cx").onclick=()=>$("cart").classList.remove("open");
 $("mode").onchange=()=>{const d=$("mode").value[0]=="D";$("ad").hidden=!d;$("ad").required=d};
-$("pay").onchange=pi;function pi(){$("pi").textContent=($("pay").value[0]=="B"?BANK:"We will share the wallet number on WhatsApp.")+" Send the payment screenshot on WhatsApp to confirm."}
+$("pay").onchange=pi;function pi(){$("pi").textContent=($("pay").value[0]=="B"?BANK+".":"We will share the wallet number on WhatsApp.")+" Send the payment screenshot on WhatsApp to confirm."}
 $("dt").min=new Date(Date.now()-new Date().getTimezoneOffset()*6e4).toISOString().slice(0,10);
 $("f").onsubmit=e=>{e.preventDefault();const it=items(),d=Object.fromEntries(new FormData($("f")));
  if(!it.length)return alert("Your cart is empty.");
