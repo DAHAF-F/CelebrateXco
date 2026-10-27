@@ -18,9 +18,9 @@
 <main id="v"><noscript><p>Please turn on JavaScript to browse the shop.</p></noscript></main>
 
 <footer><p id="addr"></p><p><a id="wl" href="#">WhatsApp</a><a id="ig" href="#">Instagram</a><a id="fb" href="#">Facebook</a></p><p><a href="#privacy">Privacy</a><a href="#terms">Terms</a><a href="#returns">Shipping and returns</a></p><p>© 2026 CelebrateXco.</p></footer>
-<a class="btn wa" id="wa" aria-label="Chat on WhatsApp" href="#">Chat on WhatsApp</a>
+<div role="complementary" aria-label="WhatsApp help"><a class="btn wa" id="wa" aria-label="Chat on WhatsApp" href="#">Chat on WhatsApp</a></div>
 
-<aside id="cart" aria-label="Cart"><div class="top"><h2>Your cart</h2><button id="cx" class="ghost">Close</button></div>
+<div id="cart" role="dialog" aria-modal="true" aria-label="Cart"><div class="top"><h2>Your cart</h2><button id="cx" class="ghost">Close</button></div>
 <div id="lines"></div><p><strong>Subtotal: <span id="tot"></span></strong><br><small>Delivery fare (inDrive) is extra.</small></p>
 <form id="f">
 <input name="name" placeholder="Your name" aria-label="Your name" required autocomplete="name">
@@ -31,6 +31,6 @@
 <textarea name="msg" rows="2" placeholder="Card message (optional)" aria-label="Card message (optional)"></textarea>
 <select name="pay" id="pay" aria-label="Payment method"><option>Bank transfer</option><option>JazzCash or Easypaisa</option></select>
 <div class="note" id="pi"></div>
-<button>Send order on WhatsApp</button></form></aside>
+<button>Send order on WhatsApp</button></form></div>
 
 <script src="script.js"></script></body></html>
