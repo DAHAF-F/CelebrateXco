@@ -1,52 +1,53 @@
 # CelebrateXco. Website
 
-Online store for CelebrateXco. (Lahore). Plain HTML, CSS and JavaScript. No build step, no dependencies.
+Online store for CelebrateXco. (Lahore). Plain HTML, CSS and JavaScript, hosted on Vercel. Every page has its own URL (for example `/flower-bouquets/rose`) and is pre-rendered so Google can index it.
 
 ## Files
 
 | File | Purpose |
 |---|---|
-| `index.html` | Page shell, header, footer, cart and checkout form |
-| `style.css` | All styles (light theme, mobile and desktop) |
-| `script.js` | Pages, products, cart and WhatsApp checkout |
-| `Images/` | Logo and photos (WebP) |
-| `404.html` | Error page for the host |
-| `robots.txt`, `sitemap.xml` | Search engine files |
+| `catalog.json` | **All products, sizes and prices.** Edit this to change the shop. |
+| `script.js` | Shop settings (top of file), pages, cart, checkout |
+| `style.css` | Styles (light theme, mobile and desktop) |
+| `src/template.html` | Page shell used to build every page |
+| `build.py` | Generates all pages and `sitemap.xml` from the template and catalog |
+| `index.html` and one folder per page | **Generated.** Do not edit by hand. |
+| `Images/` | Logo, product photos and the share image |
+| `404.html`, `robots.txt`, `sitemap.xml`, `vercel.json`, `site.webmanifest` | Hosting, SEO and app files |
 
-## Run locally
+## Change the shop
 
-Open `index.html` in a browser.
-
-## Edit
-
-Everything below is in `script.js`.
-
-- **Contact details:** constants at the top (`WA`, `ADDR`, `IG`, `FB`, `MAP`, `BANK`). `WA` is the WhatsApp number in international format without `+` or `0` (example: `923710444303`). Leave `IG`, `FB` and `MAP` as `"#"` to hide them.
-- **Products and prices:** the `C` list holds each category with its description, product names and base price. `T` (sizes) and `L` (cake weights) set the size names and price multipliers.
-- **Photos:** the `IM` list points to files in `Images/`. Only Flower Bouquets use photos right now. Other categories show emoji until you add images.
-- **Delivery lead time:** the 4-hour rule is in the checkout code (`4*36e5`).
-- **Pages:** About, Our Story, Delivery, Contact and the policy pages are the `V` object in `script.js`.
+- **Contact details, hours, lead time, bank details:** the `SHOP` block at the top of `script.js`. Leave `maps` or `bank` empty to hide them.
+- **Products and prices:** `catalog.json`. Each product has sizes with prices. Add `"img": "Images/your-photo.webp"` to a product to show its photo.
 - **Colors:** variables at the top of `style.css`.
 
-## How ordering works
+## Rebuild after any change
 
-1. Customer adds items to the cart (saved in their browser).
-2. Checkout collects name, phone, delivery or pickup, date and time, optional card message and payment method.
-3. The order opens as a prefilled WhatsApp message to your number.
-4. Customer sends the payment screenshot. Delivery is by inDrive, fare not included.
+Run this after editing `catalog.json`, `script.js`, `style.css` or `src/template.html`, then commit everything:
+
+```
+pip install playwright
+playwright install chromium
+python build.py
+```
 
 ## Deploy
 
-Upload the whole folder to any static host (Vercel, Netlify, GitHub Pages). Then:
+Upload the whole folder to GitHub. Vercel redeploys on every commit. Keep the folder name `Images` exactly (capital I). Delete any stray file named `Images/a`.
 
-1. If you add a custom domain, replace `celebratexco.vercel.app` in `index.html`, `sitemap.xml` and `robots.txt`.
-2. Replace the sample products, prices and policy text.
-3. Add Instagram, Facebook and Maps links.
-4. Add your JazzCash or Easypaisa number.
-5. Test one full order on your phone.
-6. Submit the sitemap in Google Search Console.
+## How ordering works
 
-## Known limits
+1. The customer adds items (optionally with a card message per item). The cart is saved in their browser.
+2. Checkout collects name, phone, delivery or pickup, date and time (Lahore time) and payment method.
+3. The order opens as a prefilled WhatsApp message with a product code on every line.
+4. The shop confirms the final total on WhatsApp before taking payment. Delivery is by inDrive, fare not included.
 
-- Pages use `#` links, so categories and products are not separate URLs for search engines.
-- Your bank details are visible in the page source.
+Prices in the message can be edited by the customer, so always check them against `catalog.json` before taking payment.
+
+## Before going live
+
+1. Replace the sample products, prices and policy text.
+2. Add Google Maps link in `SHOP.maps`.
+3. Check opening hours in `SHOP` (`openHour`, `closeHour`).
+4. Set up Google Search Console and submit `sitemap.xml`.
+5. If you add a custom domain, replace `celebratexco.vercel.app` in `script.js`, `build.py` and `src/template.html`, then rebuild.

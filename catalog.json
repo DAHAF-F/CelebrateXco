@@ -1,0 +1,691 @@
+{
+ "featured": [
+  "flower-bouquets/rose-classic",
+  "flower-baskets/pastel-classic",
+  "snack-bouquets/chocolate-classic",
+  "customized-cakes/photo-cake-2-lb"
+ ],
+ "cats": [
+  {
+   "slug": "flower-bouquets",
+   "name": "Flower Bouquets",
+   "emoji": "💐",
+   "desc": "Fresh hand-tied bouquets for every mood.",
+   "art": "Images/art/flower-bouquets.svg",
+   "products": [
+    {
+     "slug": "rose",
+     "name": "Rose",
+     "img": "Images/roses-pink.webp",
+     "defaultSize": 1,
+     "sizes": [
+      {
+       "label": "Small",
+       "price": 3000
+      },
+      {
+       "label": "Classic",
+       "price": 4800
+      },
+      {
+       "label": "Premium",
+       "price": 7200
+      }
+     ]
+    },
+    {
+     "slug": "mixed-seasonal",
+     "name": "Mixed Seasonal",
+     "defaultSize": 1,
+     "sizes": [
+      {
+       "label": "Small",
+       "price": 3000
+      },
+      {
+       "label": "Classic",
+       "price": 4800
+      },
+      {
+       "label": "Premium",
+       "price": 7200
+      }
+     ]
+    },
+    {
+     "slug": "lily",
+     "name": "Lily",
+     "defaultSize": 1,
+     "sizes": [
+      {
+       "label": "Small",
+       "price": 3000
+      },
+      {
+       "label": "Classic",
+       "price": 4800
+      },
+      {
+       "label": "Premium",
+       "price": 7200
+      }
+     ]
+    },
+    {
+     "slug": "tulip",
+     "name": "Tulip",
+     "defaultSize": 1,
+     "sizes": [
+      {
+       "label": "Small",
+       "price": 3000
+      },
+      {
+       "label": "Classic",
+       "price": 4800
+      },
+      {
+       "label": "Premium",
+       "price": 7200
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "flower-baskets",
+   "name": "Flower Baskets",
+   "emoji": "🧺",
+   "desc": "Blooms arranged in woven baskets.",
+   "art": "Images/art/flower-baskets.svg",
+   "products": [
+    {
+     "slug": "pastel",
+     "name": "Pastel",
+     "defaultSize": 1,
+     "sizes": [
+      {
+       "label": "Small",
+       "price": 4500
+      },
+      {
+       "label": "Classic",
+       "price": 7200
+      },
+      {
+       "label": "Premium",
+       "price": 10800
+      }
+     ]
+    },
+    {
+     "slug": "rose-garden",
+     "name": "Rose Garden",
+     "defaultSize": 1,
+     "sizes": [
+      {
+       "label": "Small",
+       "price": 4500
+      },
+      {
+       "label": "Classic",
+       "price": 7200
+      },
+      {
+       "label": "Premium",
+       "price": 10800
+      }
+     ]
+    },
+    {
+     "slug": "sunflower",
+     "name": "Sunflower",
+     "defaultSize": 1,
+     "sizes": [
+      {
+       "label": "Small",
+       "price": 4500
+      },
+      {
+       "label": "Classic",
+       "price": 7200
+      },
+      {
+       "label": "Premium",
+       "price": 10800
+      }
+     ]
+    },
+    {
+     "slug": "luxury",
+     "name": "Luxury",
+     "defaultSize": 1,
+     "sizes": [
+      {
+       "label": "Small",
+       "price": 4500
+      },
+      {
+       "label": "Classic",
+       "price": 7200
+      },
+      {
+       "label": "Premium",
+       "price": 10800
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "snack-bouquets",
+   "name": "Snack Bouquets",
+   "emoji": "🍫",
+   "desc": "Chocolates and treats arranged like flowers.",
+   "art": "Images/art/snack-bouquets.svg",
+   "products": [
+    {
+     "slug": "chocolate",
+     "name": "Chocolate",
+     "defaultSize": 1,
+     "sizes": [
+      {
+       "label": "Small",
+       "price": 2500
+      },
+      {
+       "label": "Classic",
+       "price": 4000
+      },
+      {
+       "label": "Premium",
+       "price": 6000
+      }
+     ]
+    },
+    {
+     "slug": "chips-and-candy",
+     "name": "Chips and Candy",
+     "defaultSize": 1,
+     "sizes": [
+      {
+       "label": "Small",
+       "price": 2500
+      },
+      {
+       "label": "Classic",
+       "price": 4000
+      },
+      {
+       "label": "Premium",
+       "price": 6000
+      }
+     ]
+    },
+    {
+     "slug": "biscuit",
+     "name": "Biscuit",
+     "defaultSize": 1,
+     "sizes": [
+      {
+       "label": "Small",
+       "price": 2500
+      },
+      {
+       "label": "Classic",
+       "price": 4000
+      },
+      {
+       "label": "Premium",
+       "price": 6000
+      }
+     ]
+    },
+    {
+     "slug": "mega-snack",
+     "name": "Mega Snack",
+     "defaultSize": 1,
+     "sizes": [
+      {
+       "label": "Small",
+       "price": 2500
+      },
+      {
+       "label": "Classic",
+       "price": 4000
+      },
+      {
+       "label": "Premium",
+       "price": 6000
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "snack-baskets",
+   "name": "Snack Baskets",
+   "emoji": "🎁",
+   "desc": "Gift baskets filled with favorite snacks.",
+   "art": "Images/art/snack-baskets.svg",
+   "products": [
+    {
+     "slug": "classic-snack",
+     "name": "Classic Snack",
+     "defaultSize": 1,
+     "sizes": [
+      {
+       "label": "Small",
+       "price": 4000
+      },
+      {
+       "label": "Classic",
+       "price": 6400
+      },
+      {
+       "label": "Premium",
+       "price": 9600
+      }
+     ]
+    },
+    {
+     "slug": "chocolate-lover",
+     "name": "Chocolate Lover",
+     "defaultSize": 1,
+     "sizes": [
+      {
+       "label": "Small",
+       "price": 4000
+      },
+      {
+       "label": "Classic",
+       "price": 6400
+      },
+      {
+       "label": "Premium",
+       "price": 9600
+      }
+     ]
+    },
+    {
+     "slug": "tea-time",
+     "name": "Tea Time",
+     "defaultSize": 1,
+     "sizes": [
+      {
+       "label": "Small",
+       "price": 4000
+      },
+      {
+       "label": "Classic",
+       "price": 6400
+      },
+      {
+       "label": "Premium",
+       "price": 9600
+      }
+     ]
+    },
+    {
+     "slug": "premium-snack",
+     "name": "Premium Snack",
+     "defaultSize": 1,
+     "sizes": [
+      {
+       "label": "Small",
+       "price": 4000
+      },
+      {
+       "label": "Classic",
+       "price": 6400
+      },
+      {
+       "label": "Premium",
+       "price": 9600
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "money-bouquets",
+   "name": "Money Bouquets",
+   "emoji": "💵",
+   "desc": "A creative way to gift cash.",
+   "art": "Images/art/money-bouquets.svg",
+   "products": [
+    {
+     "slug": "single-note",
+     "name": "Single Note",
+     "defaultSize": 1,
+     "sizes": [
+      {
+       "label": "Small",
+       "price": 2500
+      },
+      {
+       "label": "Classic",
+       "price": 4000
+      },
+      {
+       "label": "Premium",
+       "price": 6000
+      }
+     ]
+    },
+    {
+     "slug": "rose-money",
+     "name": "Rose Money",
+     "defaultSize": 1,
+     "sizes": [
+      {
+       "label": "Small",
+       "price": 2500
+      },
+      {
+       "label": "Classic",
+       "price": 4000
+      },
+      {
+       "label": "Premium",
+       "price": 6000
+      }
+     ]
+    },
+    {
+     "slug": "money-and-flowers",
+     "name": "Money and Flowers",
+     "defaultSize": 1,
+     "sizes": [
+      {
+       "label": "Small",
+       "price": 2500
+      },
+      {
+       "label": "Classic",
+       "price": 4000
+      },
+      {
+       "label": "Premium",
+       "price": 6000
+      }
+     ]
+    },
+    {
+     "slug": "deluxe-money",
+     "name": "Deluxe Money",
+     "defaultSize": 1,
+     "sizes": [
+      {
+       "label": "Small",
+       "price": 2500
+      },
+      {
+       "label": "Classic",
+       "price": 4000
+      },
+      {
+       "label": "Premium",
+       "price": 6000
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "birthday-deals",
+   "name": "Birthday Deals",
+   "emoji": "🎉",
+   "desc": "Ready-made birthday bundles.",
+   "art": "Images/art/birthday-deals.svg",
+   "products": [
+    {
+     "slug": "cake-and-flowers",
+     "name": "Cake and Flowers",
+     "defaultSize": 1,
+     "sizes": [
+      {
+       "label": "Small",
+       "price": 6000
+      },
+      {
+       "label": "Classic",
+       "price": 9600
+      },
+      {
+       "label": "Premium",
+       "price": 14400
+      }
+     ]
+    },
+    {
+     "slug": "cake-and-balloons",
+     "name": "Cake and Balloons",
+     "defaultSize": 1,
+     "sizes": [
+      {
+       "label": "Small",
+       "price": 6000
+      },
+      {
+       "label": "Classic",
+       "price": 9600
+      },
+      {
+       "label": "Premium",
+       "price": 14400
+      }
+     ]
+    },
+    {
+     "slug": "surprise-box",
+     "name": "Surprise Box",
+     "defaultSize": 1,
+     "sizes": [
+      {
+       "label": "Small",
+       "price": 6000
+      },
+      {
+       "label": "Classic",
+       "price": 9600
+      },
+      {
+       "label": "Premium",
+       "price": 14400
+      }
+     ]
+    },
+    {
+     "slug": "party-combo",
+     "name": "Party Combo",
+     "defaultSize": 1,
+     "sizes": [
+      {
+       "label": "Small",
+       "price": 6000
+      },
+      {
+       "label": "Classic",
+       "price": 9600
+      },
+      {
+       "label": "Premium",
+       "price": 14400
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "birthday-decor",
+   "name": "Birthday Decor",
+   "emoji": "🎈",
+   "desc": "Balloons and setups for the big day.",
+   "art": "Images/art/birthday-decor.svg",
+   "products": [
+    {
+     "slug": "balloon-bunch",
+     "name": "Balloon Bunch",
+     "defaultSize": 1,
+     "sizes": [
+      {
+       "label": "Small",
+       "price": 5000
+      },
+      {
+       "label": "Classic",
+       "price": 8000
+      },
+      {
+       "label": "Premium",
+       "price": 12000
+      }
+     ]
+    },
+    {
+     "slug": "name-banner",
+     "name": "Name Banner",
+     "defaultSize": 1,
+     "sizes": [
+      {
+       "label": "Small",
+       "price": 5000
+      },
+      {
+       "label": "Classic",
+       "price": 8000
+      },
+      {
+       "label": "Premium",
+       "price": 12000
+      }
+     ]
+    },
+    {
+     "slug": "room-decor",
+     "name": "Room Decor",
+     "defaultSize": 1,
+     "sizes": [
+      {
+       "label": "Small",
+       "price": 5000
+      },
+      {
+       "label": "Classic",
+       "price": 8000
+      },
+      {
+       "label": "Premium",
+       "price": 12000
+      }
+     ]
+    },
+    {
+     "slug": "cake-table-setup",
+     "name": "Cake Table Setup",
+     "defaultSize": 1,
+     "sizes": [
+      {
+       "label": "Small",
+       "price": 5000
+      },
+      {
+       "label": "Classic",
+       "price": 8000
+      },
+      {
+       "label": "Premium",
+       "price": 12000
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "customized-cakes",
+   "name": "Customized Cakes",
+   "emoji": "🎂",
+   "desc": "Cakes made to your theme, name and flavor.",
+   "art": "Images/art/customized-cakes.svg",
+   "products": [
+    {
+     "slug": "photo-cake",
+     "name": "Photo Cake",
+     "defaultSize": 1,
+     "sizes": [
+      {
+       "label": "1 lb",
+       "price": 3200
+      },
+      {
+       "label": "2 lb",
+       "price": 5800
+      },
+      {
+       "label": "3 lb",
+       "price": 8300
+      }
+     ]
+    },
+    {
+     "slug": "theme-cake",
+     "name": "Theme Cake",
+     "defaultSize": 1,
+     "sizes": [
+      {
+       "label": "1 lb",
+       "price": 3200
+      },
+      {
+       "label": "2 lb",
+       "price": 5800
+      },
+      {
+       "label": "3 lb",
+       "price": 8300
+      }
+     ]
+    },
+    {
+     "slug": "name-cake",
+     "name": "Name Cake",
+     "defaultSize": 1,
+     "sizes": [
+      {
+       "label": "1 lb",
+       "price": 3200
+      },
+      {
+       "label": "2 lb",
+       "price": 5800
+      },
+      {
+       "label": "3 lb",
+       "price": 8300
+      }
+     ]
+    },
+    {
+     "slug": "cartoon-cake",
+     "name": "Cartoon Cake",
+     "defaultSize": 1,
+     "sizes": [
+      {
+       "label": "1 lb",
+       "price": 3200
+      },
+      {
+       "label": "2 lb",
+       "price": 5800
+      },
+      {
+       "label": "3 lb",
+       "price": 8300
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}
