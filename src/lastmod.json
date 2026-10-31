@@ -1,0 +1,198 @@
+{
+ "": {
+  "hash": "67939b3a4d6738992c301e3e910089e850085e32",
+  "date": "2026-10-31"
+ },
+ "shop": {
+  "hash": "77b693f61a305d3121ab1d5c66ad4074ec596341",
+  "date": "2026-10-31"
+ },
+ "about": {
+  "hash": "302b817f24fe05004bec33d2cf4c8b52193ee4ce",
+  "date": "2026-10-31"
+ },
+ "our-story": {
+  "hash": "6d35d2531e412da1d412b4cbb515d380279bdf09",
+  "date": "2026-10-31"
+ },
+ "delivery": {
+  "hash": "c6d46243673c83e6b20fa4d7cd4acaf7f323b038",
+  "date": "2026-10-31"
+ },
+ "contact": {
+  "hash": "bb23017368a5b8f64d51dd7443ef72b383ca4069",
+  "date": "2026-10-31"
+ },
+ "privacy": {
+  "hash": "9da4bdcfa1fb394d6ed93b4e11ce5f5d1c780ada",
+  "date": "2026-10-31"
+ },
+ "terms": {
+  "hash": "a38e7047bf59f70b507bfb155ae205f67629aeac",
+  "date": "2026-10-31"
+ },
+ "shipping-and-returns": {
+  "hash": "4d67a407745f720faa40234211a8122d4475f3d5",
+  "date": "2026-10-31"
+ },
+ "flower-bouquets": {
+  "hash": "ecbec38a4b5f3e0bfac408095f0dd224ed76fca1",
+  "date": "2026-10-31"
+ },
+ "flower-baskets": {
+  "hash": "e1a5c4f193da6d35d26a4a83861754ad6758a4f8",
+  "date": "2026-10-31"
+ },
+ "snack-bouquets": {
+  "hash": "d57c5eb49b7984093b9f35f3f4aba66ed20eeffa",
+  "date": "2026-10-31"
+ },
+ "snack-baskets": {
+  "hash": "4805335d562155be5f10d7dec9d7452e7d9ec3ab",
+  "date": "2026-10-31"
+ },
+ "money-bouquets": {
+  "hash": "a80471422bb4eab684a615dccd57ab276e8016a8",
+  "date": "2026-10-31"
+ },
+ "birthday-deals": {
+  "hash": "7b9cdaae828119e4a06cdeed3feae647b1a20088",
+  "date": "2026-10-31"
+ },
+ "birthday-decor": {
+  "hash": "3ec81040e926dd4e096757702275f3af74bfe4ca",
+  "date": "2026-10-31"
+ },
+ "customized-cakes": {
+  "hash": "06854410edd1e5c366c6e8d96bbfe1892dc062fc",
+  "date": "2026-10-31"
+ },
+ "flower-bouquets/rose": {
+  "hash": "9d7327dc60c3db2e3a5de167849ed30015efb4c8",
+  "date": "2026-10-31"
+ },
+ "flower-bouquets/mixed-seasonal": {
+  "hash": "ef603267a0b1562cb5ca0b4576b7b388bab9a516",
+  "date": "2026-10-31"
+ },
+ "flower-bouquets/lily": {
+  "hash": "12904fd07d19d75b7ff71346d7bc99e33b1e9522",
+  "date": "2026-10-31"
+ },
+ "flower-bouquets/tulip": {
+  "hash": "f5a09edd999044e9cfa9ed4d38f39217f5058699",
+  "date": "2026-10-31"
+ },
+ "flower-baskets/pastel": {
+  "hash": "e297abd051f296de57d061e34e18b3f92cf2d767",
+  "date": "2026-10-31"
+ },
+ "flower-baskets/rose-garden": {
+  "hash": "8df4decbf87e865dc0879317c2ae4b36d1081b0a",
+  "date": "2026-10-31"
+ },
+ "flower-baskets/sunflower": {
+  "hash": "5dcf0564e0a72ae78676438cc268e6621110a235",
+  "date": "2026-10-31"
+ },
+ "flower-baskets/luxury": {
+  "hash": "fba455be5815a127922aeb96e49d5a8258ce5b82",
+  "date": "2026-10-31"
+ },
+ "snack-bouquets/chocolate": {
+  "hash": "7e9d5627e7bc24199c7793d7a43080b3662396d9",
+  "date": "2026-10-31"
+ },
+ "snack-bouquets/chips-and-candy": {
+  "hash": "d338d0f84bbe5701e140a8e072745b5dd306f1f3",
+  "date": "2026-10-31"
+ },
+ "snack-bouquets/biscuit": {
+  "hash": "8e994c64ee46956a3b6ef5504904be408860364b",
+  "date": "2026-10-31"
+ },
+ "snack-bouquets/mega-snack": {
+  "hash": "8f505f14142770c6c81ee7c3f13e92f5e36a11a6",
+  "date": "2026-10-31"
+ },
+ "snack-baskets/classic-snack": {
+  "hash": "a3f750473da951a2bf4dac9396f0109360820bfe",
+  "date": "2026-10-31"
+ },
+ "snack-baskets/chocolate-lover": {
+  "hash": "c8b448a34dd0eacb4f86a29b6f0b7aeba8912ac3",
+  "date": "2026-10-31"
+ },
+ "snack-baskets/tea-time": {
+  "hash": "571e7fd91abc4cfd4498fee37899d9397f6a24bb",
+  "date": "2026-10-31"
+ },
+ "snack-baskets/premium-snack": {
+  "hash": "9dc83f2283dc3d5502fbde34d64ee4361689af41",
+  "date": "2026-10-31"
+ },
+ "money-bouquets/single-note": {
+  "hash": "f75d1b9f7334f3f304f2b9bbb034b5d2d745303d",
+  "date": "2026-10-31"
+ },
+ "money-bouquets/rose-money": {
+  "hash": "a19de7945fdb7acf54bd95573d90f8a565ab3ef8",
+  "date": "2026-10-31"
+ },
+ "money-bouquets/money-and-flowers": {
+  "hash": "e8f4a95a20f0dd2b757af40aef02eac4d0203032",
+  "date": "2026-10-31"
+ },
+ "money-bouquets/deluxe-money": {
+  "hash": "707066651c174863fdbe12b70986aacc97a19fb2",
+  "date": "2026-10-31"
+ },
+ "birthday-deals/cake-and-flowers": {
+  "hash": "36d0b8591ad2c6854cdcd679dfca3f1bc55267d8",
+  "date": "2026-10-31"
+ },
+ "birthday-deals/cake-and-balloons": {
+  "hash": "f1b1a5a6fb6abd4a528f7af8369a670b61a5591d",
+  "date": "2026-10-31"
+ },
+ "birthday-deals/surprise-box": {
+  "hash": "8e9d05a0c4d7e3b60d4396727011e7fcc235db44",
+  "date": "2026-10-31"
+ },
+ "birthday-deals/party-combo": {
+  "hash": "a5ec7add1249b72031f26a560ef4b87dfce971c1",
+  "date": "2026-10-31"
+ },
+ "birthday-decor/balloon-bunch": {
+  "hash": "6dc168c39bc04f70a63deafc2085e42b894cec1b",
+  "date": "2026-10-31"
+ },
+ "birthday-decor/name-banner": {
+  "hash": "c8456fa539b5b937b9d108c55221cff5ec6a6b56",
+  "date": "2026-10-31"
+ },
+ "birthday-decor/room-decor": {
+  "hash": "138de95c71551c07bc1834c666c29f02a79b6299",
+  "date": "2026-10-31"
+ },
+ "birthday-decor/cake-table-setup": {
+  "hash": "3c954b99b4a14744a24482b36c3f17712ab5b3e0",
+  "date": "2026-10-31"
+ },
+ "customized-cakes/photo-cake": {
+  "hash": "b226acffe74c3861453237825a58a6bb47c90d34",
+  "date": "2026-10-31"
+ },
+ "customized-cakes/theme-cake": {
+  "hash": "3b56aa911816b9c62118cbda9b1d0ce10d5939d6",
+  "date": "2026-10-31"
+ },
+ "customized-cakes/name-cake": {
+  "hash": "7bcc285d901417f78b805bd1649788215c2e06cb",
+  "date": "2026-10-31"
+ },
+ "customized-cakes/cartoon-cake": {
+  "hash": "b632dcb796fcbc0ad3ed4593178c2f37b4415adb",
+  "date": "2026-10-31"
+ }
+}

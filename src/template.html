@@ -8,7 +8,7 @@
 <meta name="description" content="CelebrateXco. in Lahore: flower bouquets, snack baskets, money bouquets, birthday decor and custom cakes. Order online and pay by bank transfer, JazzCash or Easypaisa.">
 <meta name="theme-color" content="#faf6ec">
 <meta property="og:type" content="website"><meta property="og:url" content="https://celebratexco.vercel.app/"><meta property="og:image" content="https://celebratexco.vercel.app/Images/og-image.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="CelebrateXco. gifts, flowers and cakes in Lahore"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="https://celebratexco.vercel.app/Images/og-image.jpg"><meta property="og:title" content="CelebrateXco. | Make Every Celebration Special"><meta property="og:description" content="Flowers, snack baskets, cakes and decor delivered across Lahore.">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"Florist","url":"https://celebratexco.vercel.app/","image":"https://celebratexco.vercel.app/Images/logo.webp","name":"CelebrateXco.","description":"Flower bouquets, snack baskets, money bouquets, birthday decor and custom cakes in Lahore.","telephone":"+92-371-0444303","address":{"@type":"PostalAddress","streetAddress":"Al Saeed Chowk, Phool Mandi","addressLocality":"Lahore","addressCountry":"PK"},"areaServed":"Lahore","sameAs":["https://www.instagram.com/celebratexco","https://www.facebook.com/share/1CVRZsS65Q/"]}</script>
+<script type="application/ld+json" id="ld"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Inter:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/style.css"></head><body>
@@ -16,22 +16,24 @@
 <nav aria-label="Main"><a href="/">Home</a><a href="/shop">Shop</a><a href="/about">About</a><a href="/our-story">Our Story</a><a href="/delivery">Delivery</a><a href="/contact">Contact</a></nav>
 <button id="mb" class="ghost mb" data-act="menu" aria-label="Menu" aria-expanded="false">☰</button><button id="cb" class="ghost" data-act="open">Cart (<span id="cn">0</span>)</button></header>
 
+<div id="live" class="sr" role="status" aria-live="polite"></div>
 <main id="v"><noscript><p>Please turn on JavaScript to browse the shop.</p></noscript></main>
 
-<footer><p id="addr">Al Saeed Chowk, Phool Mandi, Lahore</p><p><a id="wl" href="https://wa.me/923710444303">WhatsApp</a><a id="ig" href="https://www.instagram.com/celebratexco">Instagram</a><a id="fb" href="https://www.facebook.com/share/1CVRZsS65Q/">Facebook</a></p><p><a href="/privacy">Privacy</a><a href="/terms">Terms</a><a href="/shipping-and-returns">Shipping and returns</a></p><p>© 2026 CelebrateXco.</p></footer>
+<footer><p id="addr">Al Saeed Chowk, Phool Mandi, Lahore</p><p><a id="wl" href="https://wa.me/923710444303">WhatsApp</a><a id="ig" href="https://www.instagram.com/celebratexco">Instagram</a><a id="fb" href="https://www.facebook.com/share/1CVRZsS65Q/">Facebook</a></p><p><a href="/privacy">Privacy</a><a href="/terms">Terms</a><a href="/shipping-and-returns">Shipping and returns</a></p><p>© <span id="yr">2026</span> CelebrateXco.</p></footer>
 <aside class="waw" aria-label="WhatsApp help"><a class="btn wa" id="wa" aria-label="Chat on WhatsApp" href="https://wa.me/923710444303">Chat on WhatsApp</a></aside>
 
 <div id="cart" role="dialog" aria-modal="true" aria-label="Cart"><div class="top"><h2>Your cart</h2><button id="cx" class="ghost" data-act="close">Close</button></div>
 <div id="cartbody"><div id="lines"></div><p><strong>Subtotal: <span id="tot"></span></strong><br><small>Delivery fare (inDrive) is extra. We confirm your final total on WhatsApp before you pay.</small></p>
 <form id="f" hidden>
 <input name="name" placeholder="Your name" aria-label="Your name" required autocomplete="name">
-<input name="phone" type="tel" inputmode="tel" pattern="[0-9+ \-]{10,16}" title="Enter a phone number with 10 to 16 digits" placeholder="Phone or WhatsApp number" aria-label="Phone or WhatsApp number" required autocomplete="tel">
+<input name="phone" type="tel" inputmode="tel" pattern="\+?[0-9][0-9 \-]{8,14}[0-9]" title="Enter a phone number with 10 to 16 digits" placeholder="Phone or WhatsApp number" aria-label="Phone or WhatsApp number" required autocomplete="tel">
 <select name="mode" id="mode" aria-label="Delivery or pickup"><option value="delivery">Delivery in Lahore</option><option value="pickup">Pickup from shop</option></select>
 <input name="addr" id="ad" placeholder="Delivery address" aria-label="Delivery address" required>
 <div class="two"><input type="date" name="date" id="dt" required aria-label="Date"><input type="time" name="time" id="tm" required aria-label="Time (Lahore time)"></div>
 <small id="hint"></small>
 <select name="pay" id="pay" aria-label="Payment method"><option value="bank">Bank transfer</option><option value="wallet">JazzCash or Easypaisa</option></select>
 <div class="note" id="pi"></div>
+<p id="err" class="err" role="alert" hidden></p>
 <button>Send order on WhatsApp</button></form></div>
 <div id="done" hidden><h3>Almost done</h3><p>WhatsApp should open with your order. If it did not, <a id="wo" href="https://wa.me/923710444303">open WhatsApp here</a>.</p><p>Send your payment screenshot there to confirm.</p><button data-act="close">Back to shop</button></div></div>
 

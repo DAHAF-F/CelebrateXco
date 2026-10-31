@@ -329,12 +329,13 @@ summary {
   border-radius:50%;
 }
 .arch {
-  position:relative;
+  display:block;
+  width:100%;
+  height:auto;
   aspect-ratio:3/4;
+  object-fit:cover;
+  object-position:50% 62%;
   border-radius:999px 999px 18px 18px;
-  background-image:url(/Images/bouquet.webp);
-  background-size:cover;
-  background-position:50% 62%;
 }
 .ban {
   display:flex;
@@ -483,7 +484,7 @@ summary {
     font-size:20px;
   }
 }
-@media(max-width:560px) {
+@media(max-width:900px) {
   header {
     flex-wrap:wrap;
     gap:10px;
@@ -509,6 +510,8 @@ summary {
   .mb {
     display:inline-flex;
   }
+}
+@media(max-width:560px) {
   .wa {
     width:48px;
     height:48px;
@@ -533,7 +536,7 @@ footer a {
   display:inline-block;
   padding:4px 0;
 }
-@media(max-width:560px) {
+@media(max-width:900px) {
   .mb {
     padding:0;
     width:44px;
@@ -571,4 +574,19 @@ body.co::after {
 .nf {
   text-align: center;
   padding: 80px 20px;
+}
+.sr {
+  position:absolute;
+  width:1px;
+  height:1px;
+  overflow:hidden;
+  clip:rect(0 0 0 0);
+  white-space:nowrap;
+}
+.err {
+  color:#9b2c2c;
+  background:#fdecea;
+  border-radius:10px;
+  padding:10px;
+  margin:0;
 }

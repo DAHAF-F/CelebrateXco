@@ -13,7 +13,7 @@ Online store for CelebrateXco. (Lahore). Plain HTML, CSS and JavaScript, hosted 
 | `build.py` | Generates all pages and `sitemap.xml` from the template and catalog |
 | `index.html` and one folder per page | **Generated.** Do not edit by hand. |
 | `Images/` | Logo, product photos and the share image |
-| `404.html`, `robots.txt`, `sitemap.xml`, `vercel.json`, `site.webmanifest` | Hosting, SEO and app files |
+| `404.html`, `robots.txt`, `sitemap.xml`, `vercel.json`, `.vercelignore`, `site.webmanifest` | Hosting, SEO and app files (404.html and sitemap.xml are generated) |
 
 ## Change the shop
 
@@ -31,9 +31,20 @@ playwright install chromium
 python build.py
 ```
 
-## Deploy
+## Deploy and update
 
-Upload the whole folder to GitHub. Vercel redeploys on every commit. Keep the folder name `Images` exactly (capital I). Delete any stray file named `Images/a`.
+Work inside your cloned repo so deleted pages are removed too:
+
+```
+git pull
+# edit catalog.json or script.js, then:
+python build.py
+git add -A
+git commit -m "Update shop"
+git push
+```
+
+Vercel redeploys on every push. Keep the folder name `Images` exactly (capital I). If an old `template.html` sits in the repo root, delete it (`git rm template.html`); the real template is `src/template.html`.
 
 ## How ordering works
 
@@ -42,7 +53,7 @@ Upload the whole folder to GitHub. Vercel redeploys on every commit. Keep the fo
 3. The order opens as a prefilled WhatsApp message with a product code on every line.
 4. The shop confirms the final total on WhatsApp before taking payment. Delivery is by inDrive, fare not included.
 
-Prices in the message can be edited by the customer, so always check them against `catalog.json` before taking payment.
+**Staff rule:** customers can edit a WhatsApp message, so check every product code and price against `catalog.json` and confirm the final total before taking payment.
 
 ## Before going live
 
@@ -50,4 +61,6 @@ Prices in the message can be edited by the customer, so always check them agains
 2. Add Google Maps link in `SHOP.maps`.
 3. Check opening hours in `SHOP` (`openHour`, `closeHour`).
 4. Set up Google Search Console and submit `sitemap.xml`.
-5. If you add a custom domain, replace `celebratexco.vercel.app` in `script.js`, `build.py` and `src/template.html`, then rebuild.
+5. Confirm `openHour` and `closeHour` in `SHOP`. They set the order window and the opening hours shown to Google.
+6. Place one real order from inside the Instagram app and one from the Facebook app. In-app browsers can behave differently.
+7. If you add a custom domain, replace `celebratexco.vercel.app` in `script.js`, `build.py` and `src/template.html`, then rebuild.
