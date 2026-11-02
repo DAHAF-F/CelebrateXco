@@ -590,3 +590,31 @@ body.co::after {
   padding:10px;
   margin:0;
 }
+.story .lead {
+  font-size:19px;
+  color:var(--gt);
+}
+.story h2 {
+  font-size:26px;
+  margin:32px 0 10px;
+}
+.story figure {
+  margin:28px 0;
+}
+.story .arch {
+  max-width:340px;
+  margin:0 auto;
+}
+.story blockquote {
+  margin:28px 0;
+  padding-left:18px;
+  border-left:3px solid var(--gold);
+  font-family:"Cormorant Garamond",Georgia,serif;
+  font-size:24px;
+  line-height:1.35;
+}
+.story .sign {
+  font-family:"Cormorant Garamond",Georgia,serif;
+  font-size:22px;
+  margin-top:28px;
+}
